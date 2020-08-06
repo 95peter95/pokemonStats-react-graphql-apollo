@@ -17,9 +17,10 @@ return (
         <span>{pokemon.weight.maximum}</span>
     </div>
     <div className = "pokemon__atacks">
+        Atacks:
     {pokemon.attacks.special.map(attack => (
         <span key={`${attack.name}-${attack.damage}`}>
-           Attacks -- {attack.name}
+                {` ${attack.name}`}
         </span>
     ))}
     </div>
